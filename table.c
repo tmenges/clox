@@ -95,7 +95,7 @@ bool tableSet(Table *table, ObjString *key, Value value) {
     return isNewKey;
 }
 
-bool tableDelete(Table *table, ObjString, ObjString *key) {
+bool tableDelete(Table *table, ObjString *key) {
     if (table->count ==0) return false;
 
     // Find the entry
