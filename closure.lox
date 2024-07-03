@@ -1,0 +1,12 @@
+fun makeClosure(value) {
+  var local = "local";
+  fun closure() {
+    print value;
+  }
+  return closure();
+}
+
+var doughnut = makeClosure("doughnut");
+var bagel = makeClosure("bagel");
+doughnut();
+bagel();
